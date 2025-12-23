@@ -381,6 +381,17 @@ section {
     margin-bottom: 30px;
 }
 
+.featured-project {
+    border-left: 4px solid var(--secondary-color);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
 .project-header {
     display: flex;
     justify-content: space-between;
@@ -449,6 +460,178 @@ section {
     left: 0;
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+/* Project Card Enhancements */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tech-category h4 {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.role-description {
+    background-color: var(--bg-light);
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.role-description > p {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.role-description ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.role-description li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.role-description li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.deliverables-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.deliverable-item {
+    background-color: var(--bg-light);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.deliverable-item h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.deliverable-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.deliverable-item li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.deliverable-item li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.phases-timeline {
+    margin-top: 20px;
+}
+
+.phase-item {
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.phase-item strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.phase-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.insights-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.insight-box {
+    background-color: var(--bg-light);
+    padding: 25px;
+    border-radius: 6px;
+}
+
+.insight-box h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.insight-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.insight-box li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.insight-box li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.impact-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 25px 0;
+}
+
+.metric-card {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.metric-value {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.metric-label {
+    font-size: 14px;
+    opacity: 0.95;
 }
 
 /* Resume Page */
